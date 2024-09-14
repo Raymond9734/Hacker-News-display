@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberFeed - Hacker News Blog</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>CyberFeed</h1>
+            <nav>
+                <a href="#" data-page="stories">Stories</a>
+                <a href="#" data-page="jobs">Jobs</a>
+                <a href="#" data-page="polls">Polls</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle">🌓</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="live-update" class="live-update"></div>
+        <div id="content">
+            <!-- Content will be dynamically loaded here -->
+        </div>
+        <button id="load-more" class="load-more">Load More</button>
+    </main>
+    <script src="hero-news.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
